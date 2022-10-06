@@ -6,28 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Servicio de contratacion juegos de rol">
     <meta name="author" content="Gomez Gonzalo">  
-    <title>Document</title>
+    <title>Dragon Fantasy</title>
     <script src="https://kit.fontawesome.com/42513131f9.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        nav{
+            position: fixed;
+            top:0px;
+            width: 100%;
+        }
+        
+        nav ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        nav li{
+            float: left;
+            border-right: 1px solid #bbb;
+              
+        }              
+       
+        nav li:first-child{
+            border-right: none;
+        }
+
+        nav li:last-child {
+            float: right;
+            border-right: none;
+            border-left: 1px solid #bbb;
+        }
+
+        nav li a {
+            display:block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;            
+        }
+
+        nav li a:hover:not(.icon) {
+            background-color: #111;
+        }
+
+        .icon {
+            background-color: #04aa6d;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="./index.html">
-            <i class="fa-solid fa-dragon"></i>
-            <span>Dragon Fantasy</span>
-        </a>
         <nav>
-            <ul>
-                <li>
-                    <a href="#about"> Acerca de...</a>
+            <ul class="nav">
+                <li>  
+                    <a  class="icon" href="./index.html" >
+                    <i class="fa-solid fa-dragon"></i>
+                    <span>Dragon Fantasy</span>
+                    </a> 
                 </li>
-                <li>
-                    <a href="#sistemas">Sistemas de juego</a>
+                <li class="linav">
+                    <a href="#about" class="navbar"> Acerca de...</a>
                 </li>
-                <li>
-                    <a href="#partidas">Partidas</a>
+                <li class="linav">
+                    <a href="#sistemas"class="navbar">Sistemas de juego</a>
                 </li>
-                <li>
-                    <a href="contacto.html">Contactanos!</a>
+                <li class="linav">
+                    <a href="#partidas"class="navbar">Partidas</a>
+                </li>
+                <li class="linav">
+                    <a href="contacto.html"class="navbar">Contactanos!</a>
                 </li>
             </ul>
         </nav>

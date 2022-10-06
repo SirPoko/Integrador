@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    height: 200vh;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    background-color: rgb(198, 33, 33);
+    color: aliceblue;
+    /* width: 100%; */
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+
+nav { 
+    float: right;
+    display: inline;
+}
