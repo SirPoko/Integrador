@@ -1,19 +1,97 @@
-body {
-    margin: 0px;
-    height: 200vh;
+html {
+    scroll-padding-top: 46px;
+    }
+
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
 }
 
-header {
+/* Header */
+
+header{
     position: fixed;
     top: 0px;
-    background-color: rgb(198, 33, 33);
-    color: aliceblue;
-    /* width: 100%; */
-    width: calc(100% - 20px);
-    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
 }
 
-nav { 
-    float: right;
-    display: inline;
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
 }
+
+nav li{
+    float: left;
+    border-right: 1px solid #bbb;
+      
+}              
+
+nav li:first-child{
+    border-right: none;
+}
+
+nav li:last-child {
+    float: right;
+    border-right: none;
+    border-left: 1px solid #bbb;
+}
+
+nav li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;            
+}
+
+nav li a:hover:not(.icon) {
+    background-color: #111;
+}
+
+.icon {
+    background-color: #04aa6d;
+}
+
+/* Home */
+
+
+
+#home{
+    margin-top: 46px;
+    color:aliceblue;
+    min-height:calc(100vh - 46px);
+    background-image: url('./img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+    
+
+
+}
+
+h1 {
+    margin: 0px;
+    font-size: 4em;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home h4{
+    background-color: orange;
+   
+
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+}
+

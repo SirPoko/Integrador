@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Servicio de contratacion juegos de rol">
-    <meta name="author" content="Gomez Gonzalo">  
-    <title>Document</title>
+    <meta name="author" content="Gomez Gonzalo">
+    <title>Dragon Fantasy</title>
     <script src="https://kit.fontawesome.com/42513131f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <a href="./index.html">
-        <i class="fa-solid fa-dragon"></i>
-        <span>Dragon Fantasy</span>
-    </a>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about"> Acerca de...</a>
-            </li>
-            <li>
-                <a href="#sistemas">Sistemas de juego</a>
-            </li>
-            <li>
-                <a href="#partidas">Partidas</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contactanos!</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="icon" href="./index.html">
+                        <i class="fa-solid fa-dragon"></i>
+                        <span>Dragon Fantasy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about"> Acerca de...</a>
+                </li>
+                <li>
+                    <a href="#sistemas">Sistemas de juego</a>
+                </li>
+                <li>
+                    <a href="#partidas">Partidas</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contactanos!</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section id="contacto">
             <fieldset>
@@ -45,18 +53,18 @@
 
                 <label for="correo">Correo Electrónico:</label>
                 <input type="text" name="correo" autocomplete required placeholder="Ingrese su correo electrónico">
-            
+
                 <label for="partida">¿En que tipo de partida esta interesado/a?</label>
                 <select name="partida" required>
-                <option value="">Seleccione un tipo de partida...</option>
-                <option value="partida1">Tipo 1</option>
-                <option value="partida2">Tipo 2</option>
-                <option value="partida3">Tipo 3</option>
+                    <option value="">Seleccione un tipo de partida...</option>
+                    <option value="partida1">Tipo 1</option>
+                    <option value="partida2">Tipo 2</option>
+                    <option value="partida3">Tipo 3</option>
                 </select>
-            
+
                 <label for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" cols="30" rows="10" placeholder="Quiero vivir aventuras!!"></textarea>
-            
+
                 <label for="disponibilidad">Zona horaria/Disponibilidad:</label>
                 <textarea name="disponibilidad" cols="30" rows="10" placeholder="¿Cuando te gustaria jugar?"></textarea>
             </fieldset>
@@ -73,14 +81,14 @@
                 <span>Contactanos!!</span>
             </a>
         </div>
-        
+
         <div id="redes-sociales">
             <ul>
                 <li>
                     <a href="facebook">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                </li>    
+                </li>
                 <li>
                     <a href="whatsapp">
                         <i class="fa-brands fa-whatsapp"></i>
@@ -91,10 +99,11 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
-            </ul>  
+            </ul>
         </div>
-        
+
     </footer>
 
 </body>
+
 </html>
