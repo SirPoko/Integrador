@@ -63,7 +63,7 @@ nav li a:hover:not(.icon) {
 
 
 #home{
-    margin-top: 46px;
+    margin-top: 45px;
     color:aliceblue;
     min-height:calc(100vh - 46px);
     background-image: url('./img/fondo.jpg');
