@@ -1,17 +1,41 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+@font-face {
+    font-family: immortal;
+    src: url(./IMMORTAL.ttf);
+}
+
+@font-face {
+    font-family: alamak;
+    src: url(./resources/Alamak.ttf);
+}
+
+@font-face {
+    font-family: endor;
+    src: url(./resources/ENDOR___.ttf);
+}
+
+@font-face {
+    font-family: endoralt;
+    src: url(./resources/ENDORALT.ttf);
+}
+
 html {
     scroll-padding-top: 46px;
-    }
+    background-color: #abc38e;
+}
 
 
-body{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+
+
+body {
+    margin: 0px;
 }
 
 /* Header */
 
-header{
+header {
     position: fixed;
     top: 0px;
     width: 100%;
@@ -19,20 +43,20 @@ header{
     z-index: 1;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 
 }
 
-nav li{
+nav li {
     float: left;
     border-right: 1px solid #bbb;
-      
-}              
 
-nav li:first-child{
+}
+
+nav li:first-child {
     border-right: none;
 }
 
@@ -43,11 +67,11 @@ nav li:last-child {
 }
 
 nav li a {
-    display:block;
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;            
+    text-decoration: none;
 }
 
 nav li a:hover:not(.icon) {
@@ -58,40 +82,43 @@ nav li a:hover:not(.icon) {
     background-color: #04aa6d;
 }
 
+
 /* Home */
 
 
-
-#home{
-    margin-top: 46px;
-    color:aliceblue;
-    min-height:calc(100vh - 46px);
-    background-image: url('./img/fondo.jpg');
+#home {
+    /* margin-top: 46px; */
+    color: aliceblue;
+    min-height: calc(100vh);
+    background-image: url(./img/imagen1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
- 
-    
-
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column wrap;
 }
 
 h1 {
-    margin: 0px;
-    font-size: 4em;
-
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 1em;
+    font-family: endor;
+    font-size: 8em;
+    color: #04aa6d;
+    -webkit-text-stroke: 1px #e0723c
 }
 
-#home h4{
-    background-color: orange;
-   
-
-    position: absolute;
-    bottom: 10%;
-    right: 0%;
+#home h2 {
+    font-family: 'Caveat';
+    color: rgb(230, 220, 220);
+    font-size: 6em;
+    margin-bottom: 1em;
+    -webkit-text-stroke: 2px black;  
 }
 
+/* about */
+
+#about{
+    display: grid;
+    grid-template-columns: auto auto;
+}
