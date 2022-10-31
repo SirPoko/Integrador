@@ -97,7 +97,7 @@ nav li a:hover:not(.icon) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
 h1 {
@@ -120,5 +120,26 @@ h1 {
 
 #about{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 80%;
+    background-color: orange;
+    
 }
+
+#about div{
+    background-color: aqua;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-title{
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+.about-text{
+    text-align: center;
+}
+
