@@ -122,11 +122,12 @@ h1 {
 
 #about{
     background-color: blueviolet;
-    height: 100vh;
+    
 
     display: flex;
     flex-direction: row;
-    
+    margin-bottom: 40px;
+    border-radius: 24px;
 }
 
 #about-text{
@@ -149,12 +150,20 @@ h1 {
     align-items: center;
  }
 
+ #about-images img{
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 12px ;
+}
+
 /* sistemas de juego */
  
 #sistemas {
-    background-color: green;
+    background-color: #04aa6d;
     padding: 20px;
     text-align: center;
+    margin-bottom: 40px;
+    border-radius: 24px;
 }
 
 #sistemas-container {
@@ -166,24 +175,35 @@ h1 {
 
 #sistemas-container > div {
     flex-basis: 200px;
-
+    width: 200px;
+    height: 355px;
     border: 1px solid black;
     text-align: center;
     margin: 10px;
+    background-color: #e0723c;
+    border-radius: 0px 0px 12px 12px;
+    
 }
 
-
-
-#sistemas-container > div > img {
+#sistemas-container div img {
+    background-color: #333;
     max-width: 100%;
+    padding-bottom: 5px;
 }
+
+#sistemas-container div p {
+    margin: 3px;
+}
+
 
 /* tipos de partidas */
 
 #partida {
-    background-color: rgb(87, 0, 128);
+    background-color: blueviolet;
     padding: 20px;
     text-align: center;
+    margin-bottom: 40px;
+    border-radius: 24px;
 }
 
 #partida-container {
@@ -196,7 +216,7 @@ h1 {
 #partida-container > div {
     display: flex;
     flex-basis: 200px;
-
+    background-color: #04aa6d;
     border: 1px solid black;
     text-align: center;
     margin: 10px;
@@ -210,9 +230,21 @@ h1 {
     margin: 10px;
 }
 #partida-container > div > img {
-    max-width: 100%;
+    max-height: 255px;
+    
 }
 
+.imagen-izq{
+    border-right: 1px solid black;
+}
+
+.imagen-der{
+    border-left: 1px solid black;
+}
+
+#partida-container div div{
+    margin: 50px;
+}
 /* Footer */
 
 
@@ -222,15 +254,21 @@ footer{
    }
 
 footer a button {
-    background-color: #333; 
+    background-color: #e0723c; 
     border: none;
     padding: 20px;
     margin: 20px 2px;
     cursor: pointer;
     border-radius: 8px;
     color: white;
+    
     }
-#redes-sociales{
+
+    footer a button:hover {
+        background-color: #9c512c
+    }
+    
+        #redes-sociales{
     width: 50%;
     margin: auto;
 }
@@ -253,3 +291,41 @@ footer a button {
 .redes i{
     font-size: 300%;
 }
+
+/* contacto */
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .formulario {
+    margin-top: 50px; 
+    border-radius: 24px;
+    background-color: blueviolet;
+    padding: 20px;
+  }
+  .formulario h3{
+    text-align: center;
+    font-size: xx-large;
+  }

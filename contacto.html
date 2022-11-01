@@ -23,36 +23,35 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#about"> Acerca de...</a>
+                    <a href="./index.html#about"> Acerca de...</a>
                 </li>
                 <li>
-                    <a href="#sistemas">Sistemas de juego</a>
+                    <a href="./index.html#sistemas">Sistemas de juego</a>
                 </li>
                 <li>
-                    <a href="#partidas">Partidas</a>
+                    <a href="./index.html#partida">Partidas</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Contactanos!</a>
+                    <a href="./contacto.html">Contactanos!</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="contacto">
-            <fieldset>
-                <legend>
-                    Contactanos!!
-                </legend>
 
+        <div class="formulario">
+            <h3>Contactanos!!</h3>
+
+            <form action="/action_page.php">
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" autofocus required placeholder="Ingrese su Nombre">
+                <input type="text" autofocus required name="nombre" placeholder="Ingrese su nombre...">
 
                 <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" autocomplete required placeholder="Ingrese su Nombre">
+                <input type="text" name="apellido" required placeholder="Ingrese su apellido...">
 
                 <label for="correo">Correo Electrónico:</label>
-                <input type="text" name="correo" autocomplete required placeholder="Ingrese su correo electrónico">
+                <input type="text" name="correo" autocomplete required placeholder="Ingrese su correo electrónico...">
 
                 <label for="partida">¿En que tipo de partida esta interesado/a?</label>
                 <select name="partida" required>
@@ -67,39 +66,29 @@
 
                 <label for="disponibilidad">Zona horaria/Disponibilidad:</label>
                 <textarea name="disponibilidad" cols="30" rows="10" placeholder="¿Cuando te gustaria jugar?"></textarea>
-            </fieldset>
 
+                <input type="submit" value="Submit">
+            </form>
 
+        </div>
         </section>
     </main>
 
     <footer>
-
-        <div id="contacto">
-            <a href="./contacto.html">
-                <img src="./img/placeholder.png" alt="Logo" height="40px">
-                <span>Contactanos!!</span>
-            </a>
-        </div>
-
         <div id="redes-sociales">
-            <ul>
-                <li>
-                    <a href="facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
+            <a href="facebook" class="redes">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="whatsapp" class="redes">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="instagram" class="redes">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+
         </div>
 
     </footer>
